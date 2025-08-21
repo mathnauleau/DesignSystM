@@ -23,7 +23,7 @@ This repo contains:
 
 Example structure:
 
-''' bash
+  ```bash
 foundations/
 ├─ tokens/               # Source tokens (exported from Figma/Token Studio)
 │  └─ tokens.json
@@ -33,7 +33,7 @@ foundations/
 │  ├─ tokens.json
 │  ├─ tokens.scss
 └─ package.json
-'''
+
 
 The repo can be published as an **NPM package** (for web) or exported via GitHub Releases (for mobile platforms).
 
@@ -43,19 +43,20 @@ The repo can be published as an **NPM package** (for web) or exported via GitHub
 
 ### Option 1: NPM (recommended for web projects)
 Projects install the foundations package:
-```bash
+
+  ```bash
 npm install @your-org/foundations
 
 Then import the generated CSS or JSON:
 
-'''
+  ```bash
 @import "@your-org/foundations/dist/tokens.css";
-'''
 
+  ```css
 .button {
   background: var(--color-background-primary);
 }
-'''
+
 
 ---
 
@@ -74,16 +75,15 @@ Contains tokens and builds outputs (tokens.css, tokens.json).
 	•	Repo B (App)
 References Repo A’s package:
 
-''' bash
+  ```bash
 npm install @your-org/foundations
-'''
 
 Uses tokens in styles:
-''' css
+
+  ```css
 body {
   color: var(--color-text-primary);
 }
-'''
 
 ---
 
@@ -110,7 +110,7 @@ Here’s an example workflow that:
 
 Save as .github/workflows/release.yml:
 
-''' yaml
+  ```yaml
 name: Release Foundations
 
 on:
@@ -146,4 +146,3 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # Or GITHUB_TOKEN if publishing to GitHub Packages
-'''
