@@ -29,13 +29,14 @@ designsystm/
 │   ├── typography.json
 │   ├── spacing.json
 │   └── …
+│   └── Ideally some codeGen, from JSON to SCSS etc.
 │
 ├── assets/          # Icons, illustrations, logos, and other brand assets
 │   ├── icons/
 │   ├── illustrations/
 │   └── logos/
 │
-├── components/      # Core reusable UI components
+├── components/      # For now, a list of md files gathering some insights
 │   ├── button/
 │   ├── input/
 │   ├── card/
