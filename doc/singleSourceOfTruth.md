@@ -23,7 +23,7 @@ This repo contains:
 
 Example structure:
 
-'''
+''' bash
 foundations/
 ├─ tokens/               # Source tokens (exported from Figma/Token Studio)
 │  └─ tokens.json
