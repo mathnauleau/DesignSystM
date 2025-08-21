@@ -1,7 +1,7 @@
 # ☞ DesignSystM
 
 Welcome to **DesignSystM** — my personal design system playground.  
-The **M** stands for **Mathieu** ✌️.  
+(Yes, the **M** stands for **Mathieu** ✌️).  
 
 This repo is where I explore, experiment, and learn about building a design system from the ground up.  
 It’s not about being “production-perfect” — it’s about **ideation, iteration, and fun**.
