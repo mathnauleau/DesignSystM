@@ -70,4 +70,4 @@ This repo is **work in progress**. Expect half-baked ideas, scrappy experiments,
 That’s the point.  
 
 
-Made with <> by Mathieu
+Made with <❤> by Mathieu
