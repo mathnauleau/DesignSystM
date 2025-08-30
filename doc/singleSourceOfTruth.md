@@ -95,17 +95,17 @@ body {
 ---
 
 ## 5. Benefits
-	•	Scalable: multiple apps share the same base.
-	•	Automated: update once, propagate everywhere.
-	•	Aligned: design tokens remain in sync across design and code.
+- Scalable: multiple apps share the same base.
+- Automated: update once, propagate everywhere.
+- Aligned: design tokens remain in sync across design and code.
 
 ---
 
 ## 6. Best Practices
-	•	Never hardcode values in apps – always reference tokens.
-	•	Use semantic tokens (e.g. color-background-primary) instead of raw colors.
-	•	Keep build outputs minimal and platform-agnostic.
-	•	Version foundations carefully (semantic versioning).
+- Never hardcode values in apps – always reference tokens.
+- Use semantic tokens (e.g. color-background-primary) instead of raw colors.
+- Keep build outputs minimal and platform-agnostic.
+- Version foundations carefully (semantic versioning).
     
 ---
 
