@@ -33,6 +33,7 @@ foundations/
 │  ├─ tokens.json
 │  ├─ tokens.scss
 └─ package.json
+  ```
 
 
 The repo can be published as an **NPM package** (for web) or exported via GitHub Releases (for mobile platforms).
