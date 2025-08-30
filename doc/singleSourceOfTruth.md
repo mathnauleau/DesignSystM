@@ -64,18 +64,20 @@ Then import the generated CSS or JSON:
 ---
 
 ## 3. Workflow
-	1.	Designers define tokens in Figma (via Figma Variables).
-	2.	Token Studio exports them as JSON into the foundations repo.
-	3.	Developers run the build script (npm run build) to generate outputs for each platform.
-	4.	Projects consume the generated CSS/JSON from the package.
-	5.	When tokens change → update version in foundations repo → bump version in consuming projects.
+
+1. Designers define tokens in Figma (via Figma Variables).
+2. Token Studio exports them as JSON into the foundations repo.
+3. Developers run the build script (npm run build) to generate outputs for each platform.
+4. Projects consume the generated CSS/JSON from the package.
+5. When tokens change → update version in foundations repo → bump version in consuming projects.
 
 ---
 
 ## 4. Example: Two Repositories
-	•	Repo A (Foundations)
+### Repo A (Foundations)
 Contains tokens and builds outputs (tokens.css, tokens.json).
-	•	Repo B (App)
+
+### Repo B (App)
 References Repo A’s package:
 
   ```bash
