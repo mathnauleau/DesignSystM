@@ -1,6 +1,6 @@
-# Using a Central Repository as a Single Source of Truth for Foundations
+# Guide to use a Central Repository as a Single Source of Truth for Foundations
 
-Our design system foundations (colors, typography, spacing, etc.) live in **one central GitHub repository**.  
+My design system foundations (colors, typography, spacing, etc.) live in **one central GitHub repository**.  
 This repository is the **source of truth** for all design tokens and their outputs (e.g. CSS variables, JSON, platform-specific files).  
 
 By separating foundations into a dedicated repo, we ensure:
@@ -47,17 +47,19 @@ Projects install the foundations package:
 
   ```bash
 npm install @your-org/foundations
+  ```
 
 Then import the generated CSS or JSON:
 
   ```bash
 @import "@your-org/foundations/dist/tokens.css";
+  ```
 
   ```css
 .button {
   background: var(--color-background-primary);
 }
-
+  ```
 
 ---
 
@@ -78,6 +80,7 @@ References Repo A’s package:
 
   ```bash
 npm install @your-org/foundations
+  ```
 
 Uses tokens in styles:
 
@@ -85,6 +88,7 @@ Uses tokens in styles:
 body {
   color: var(--color-text-primary);
 }
+  ```
 
 ---
 
@@ -147,3 +151,4 @@ jobs:
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} # Or GITHUB_TOKEN if publishing to GitHub Packages
+  ```
