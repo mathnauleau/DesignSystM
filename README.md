@@ -70,5 +70,9 @@ That said, I love feedback, inspiration, or fun ideas. If you stumble here, feel
 This repo is **work in progress**. Expect half-baked ideas, scrappy experiments, and sudden shifts in structure.  
 That’s the point.  
 
+## 📌 Resources
+
+Various inspiring links or repos.
+- https://turborepo.com/docs
 
 Made with <❤> by Mathieu
