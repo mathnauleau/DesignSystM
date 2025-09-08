@@ -73,6 +73,6 @@ That’s the point.
 ## 📌 Resources
 
 Various inspiring links or repos.
-- https://turborepo.com/docs
+- https://turborepo.com/docs (Use pseudo-code to describe each component)
 
 Made with <❤> by Mathieu
