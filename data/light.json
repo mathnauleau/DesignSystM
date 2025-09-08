@@ -1,0 +1,98 @@
+{
+  "color": {
+    "primary": {
+      "light": {
+        "value": "#1B2E55",
+        "type": "color"
+      },
+      "default": {
+        "value": "#0C1527",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#0A111F",
+        "type": "color"
+      }
+    },
+    "secondary": {
+      "light": {
+        "value": "#799fff",
+        "type": "color"
+      },
+      "default": {
+        "value": "#3F75FF",
+        "type": "color"
+      },
+      "dark": {
+        "value": "#2753c1",
+        "type": "color"
+      }
+    },
+    "gray": {
+      "1": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "2": {
+        "value": "#F8F9FA",
+        "type": "color"
+      },
+      "3": {
+        "value": "#F3F3F3",
+        "type": "color"
+      },
+      "4": {
+        "value": "#CFCFCF",
+        "type": "color"
+      },
+      "5": {
+        "value": "#A1A1A1",
+        "type": "color"
+      },
+      "6": {
+        "value": "#888888",
+        "type": "color"
+      },
+      "7": {
+        "value": "#6F6F6F",
+        "type": "color"
+      },
+      "8": {
+        "value": "#555555",
+        "type": "color"
+      },
+      "9": {
+        "value": "#3C3C3C",
+        "type": "color"
+      },
+      "10": {
+        "value": "#222222",
+        "type": "color"
+      }
+    },
+    "feedback": {
+      "critical": {
+        "value": "#ffa500",
+        "type": "color"
+      },
+      "information": {
+        "value": "#dae8f1",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#ff4500",
+        "type": "color"
+      }
+    },
+    "navigation": {
+      "default": {
+        "value": "#ECF2F6",
+        "type": "color"
+      },
+      "hover": {
+        "value": "#C2E7FF",
+        "type": "color"
+      }
+    }
+  }
+}

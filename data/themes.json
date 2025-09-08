@@ -1,0 +1,16 @@
+{
+  "themes": {
+    "light": {
+      "extends": [
+        "global.json",
+        "tokens-light.json"
+      ]
+    },
+    "dark": {
+      "extends": [
+        "global.json",
+        "tokens-dark.json"
+      ]
+    }
+  }
+}
