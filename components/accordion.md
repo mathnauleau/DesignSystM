@@ -67,8 +67,11 @@ A **Accordion** is a vertically stacked list of items that can expand/collapse. 
 
 ## Accessibility
 
-### Relevant WCAG AA compliance
+### Relevant WCAG 2.2 Success Criterion
 - [1.4.3 Contrast](https://www.w3.org/TR/WCAG22/#contrast-minimum)
+- [2.1.1 Keyboard](https://www.w3.org/WAI/WCAG22/Understanding/keyboard.html) Must be fully operable with keyboard (open/close, move focus).
+- [4.1.2 Name, Role](https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html) Value – Correct ARIA roles (button, region) and states (expanded).
+- [1.3.1 Info and Relationships](https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships.html) Structure must be conveyed programmatically (headings, landmarks).
 
 ### Keyboard navigation
 - Tab to focus
