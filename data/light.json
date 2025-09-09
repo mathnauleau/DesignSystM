@@ -30,7 +30,7 @@
     },
     "gray": {
       "1": {
-        "value": "#FFFFFF",
+        "value": "color.core.white",
         "type": "color"
       },
       "2": {
