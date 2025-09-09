@@ -3,13 +3,13 @@
     "light": {
       "extends": [
         "global.json",
-        "tokens-light.json"
+        "light.json"
       ]
     },
     "dark": {
       "extends": [
         "global.json",
-        "tokens-dark.json"
+        "dark.json"
       ]
     }
   }
