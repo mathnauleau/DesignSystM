@@ -51,7 +51,8 @@
       },
       "xs": {
         "value": "{unit.core.base} * 4",
-        "type": "fontSizes"
+        "type": "fontSizes",
+        "description": "corresponds to 16px in current setup"
       },
       "s": {
         "value": "{unit.core.base} * 5",
