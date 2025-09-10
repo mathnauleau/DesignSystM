@@ -2,6 +2,8 @@
 
 Foundations are the **building blocks** of our design system. They define the **visual language** (colors, typography, spacing, etc.) and provide the **tokens** that bridge design and code. Foundations ensure consistency and scalability across platforms.
 
+My goal is to be able to manage and connect my styles/tokens between Figma, GitHub, and a style dictionary.
+
 ---
 
 ## 1. Design Tokens
