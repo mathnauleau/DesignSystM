@@ -2,95 +2,95 @@
   "color": {
     "primary": {
       "light": {
-        "value": "#ffffff",
+        "value": "{color.core.white}",
         "type": "color"
       },
       "default": {
-        "value": "#FFFFFF",
+        "value": "{color.core.white}",
         "type": "color"
       },
       "dark": {
-        "value": "#80a4ec",
+        "value": "{color.core.blue-10}",
         "type": "color"
       }
     },
     "secondary": {
       "light": {
-        "value": "#2753c1",
+        "value": "{color.core.blue-20}",
         "type": "color"
       },
       "default": {
-        "value": "#3F75FF",
+        "value": "{color.core.blue-30}",
         "type": "color"
       },
       "dark": {
-        "value": "#799fff",
+        "value": "{color.core.blue-40}",
         "type": "color"
       }
     },
     "gray": {
       "1": {
-        "value": "#222222",
+        "value": "{color.core.gray-10}",
         "type": "color"
       },
       "2": {
-        "value": "#3C3C3C",
+        "value": "{color.core.gray-20}",
         "type": "color"
       },
       "3": {
-        "value": "#555555",
+        "value": "{color.core.gray-30}",
         "type": "color"
       },
       "4": {
-        "value": "#6F6F6F",
+        "value": "{color.core.gray-40}",
         "type": "color"
       },
       "5": {
-        "value": "#888888",
+        "value": "{color.core.gray-50}",
         "type": "color"
       },
       "6": {
-        "value": "#A1A1A1",
+        "value": "{color.core.gray-60}",
         "type": "color"
       },
       "7": {
-        "value": "#CFCFCF",
+        "value": "{color.core.gray-70}",
         "type": "color"
       },
       "8": {
-        "value": "#F3F3F3",
+        "value": "{color.core.gray-80}",
         "type": "color"
       },
       "9": {
-        "value": "#F8F9FA",
+        "value": "{color.core.gray-90}",
         "type": "color"
       },
       "10": {
-        "value": "#FFFFFF",
+        "value": "{color.core.white}",
         "type": "color"
       }
     },
     "feedback": {
       "critical": {
-        "value": "#ffa500",
+        "value": "{color.core.orange-40}",
         "type": "color"
       },
       "information": {
-        "value": "#124669",
+        "value": "{color.core.blue-90}",
         "type": "color"
       },
       "danger": {
-        "value": "#b13508",
+        "value": "{color.core.red-60}",
         "type": "color"
       }
     },
     "navigation": {
       "default": {
-        "value": "#124669",
+        "value": "{color.core.blue-90}",
         "type": "color"
       },
       "hover": {
-        "value": "#1a557c",
+        "value": "{color.core.blue-80}",
         "type": "color"
       }
     }
