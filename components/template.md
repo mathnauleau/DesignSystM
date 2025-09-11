@@ -8,6 +8,52 @@ A **[Component Name]** is a [brief description]. Use it for [primary purpose].
   
 ---
 
+## Implementation plan
+1. Prompt for the main container and the basic structure with 
+2. Prompt for the child components
+3. Prompt for the variants of the master component
+4. Prompt for the component logic.
+
+---
+
+## Design specifications
+The tokens mentioned below are based on {userName/designSystem} repository.
+- **Container Layout:**
+  - Background: `color.background.primary.default` (#ffffff)
+  - Width: `248px` (expanded state)
+  - Height: Auto-fit content
+  - Shadow: `4px 0px 4px rgba(38,49,58,0.04), 8px 0px 16px rgba(38,49,58,0.08)`
+  - Border radius: `borderRadius-core-M` (8px)
+
+- **Typography System:**
+  - Primary text: `fontFamily-core-mainFont` (Hamburg Serial)
+  - Title: `heading-3` variant (Typography component)
+  - Section headers: `body-strong`
+  - Menu items: `body-regular`
+  - Color: `foreground-primary-default` (#26313a)
+
+- **Spacing:**
+  - Internal padding: `spacing.core.md` (16px)
+  - Vertical gaps: `spacing.core.md` (16px)
+
+- **Child component 1:**
+  - Background: `background-primary-default` (#ffffff)
+  - Padding: `spacing-core-2` (8px)
+  - Border radius: `borderRadius-core-M` (8px)
+  - Typography: `body-regular`
+  - Text color: `foreground-primary-default`
+
+- **Child component 1:**
+  - Background: `background-primary-default` (#ffffff)
+  - Padding: `spacing-core-2` (8px)
+  - Border radius: `borderRadius-core-M` (8px)
+  - Typography: `body-regular`
+  - Text color: `foreground-primary-default`
+  - Section icons: `storeTask`, `order`, `store`, `settlement`, `document`, `settings`
+  - Interaction icons: `chevron-up`, `chevron-down`
+
+---
+
 ## Use Cases
 
 **Use when:**
