@@ -1,0 +1,7 @@
+*.json
+.github
+build/
+data/
+_*.ts
+_*.tsx
+*.md
