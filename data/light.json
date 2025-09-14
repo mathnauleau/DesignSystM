@@ -86,11 +86,11 @@
     },
     "navigation": {
       "default": {
-        "value": "{color.core.gray-0}",
+        "value": "{color.core.gray-25}",
         "type": "color"
       },
       "hover": {
-        "value": "{color.core.blue-5}",
+        "value": "{color.core.blue-50}",
         "type": "color"
       }
     }
