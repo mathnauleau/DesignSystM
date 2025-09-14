@@ -64,6 +64,13 @@ That said, I love feedback, inspiration, or fun ideas. If you stumble here, feel
 - Share your own learnings 🔗
 
 
+## 💻 Useful command lines
+To run Style dictionary
+``` bash
+style-dictionary build
+style-dictionary build --verbose
+```
+
 
 ## 📌 Note
 
