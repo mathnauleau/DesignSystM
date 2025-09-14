@@ -29,43 +29,43 @@
       }
     },
     "gray": {
-      "1": {
+      "10": {
         "value": "{color.core.gray-10}",
         "type": "color"
       },
-      "2": {
+      "20": {
         "value": "{color.core.gray-20}",
         "type": "color"
       },
-      "3": {
+      "30": {
         "value": "{color.core.gray-30}",
         "type": "color"
       },
-      "4": {
+      "40": {
         "value": "{color.core.gray-40}",
         "type": "color"
       },
-      "5": {
+      "50": {
         "value": "{color.core.gray-50}",
         "type": "color"
       },
-      "6": {
+      "60": {
         "value": "{color.core.gray-60}",
         "type": "color"
       },
-      "7": {
+      "70": {
         "value": "{color.core.gray-70}",
         "type": "color"
       },
-      "8": {
+      "80": {
         "value": "{color.core.gray-80}",
         "type": "color"
       },
-      "9": {
+      "90": {
         "value": "{color.core.gray-90}",
         "type": "color"
       },
-      "10": {
+      "100": {
         "value": "{color.core.white}",
         "type": "color"
       }
