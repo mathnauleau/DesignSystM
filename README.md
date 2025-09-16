@@ -74,5 +74,11 @@ That’s the point.
 
 Various inspiring links or repos.
 - https://turborepo.com/docs (Use pseudo-code to describe each component)
+- [fluttericon.com](https://www.fluttericon.com)
+
+## 🪄 Figma Plugins
+- [SVG Export](https://www.figma.com/community/plugin/814345141907543603/svg-export)
+- [Fill rule](https://www.figma.com/community/plugin/771155994770327940)
+
 
 Made with <❤> by Mathieu
