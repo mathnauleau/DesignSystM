@@ -1,0 +1,35 @@
+{
+  "source": [
+    "../data/global.json"
+  ],
+  "platforms": {
+    "css-light": {
+      "transformGroup": "css",
+      "buildPath": "../build/css/",
+      "include": [
+        "../data/global.json",
+        "../data/light.json"
+      ],
+      "files": [
+        {
+          "destination": "light.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "css-dark": {
+      "transformGroup": "css",
+      "buildPath": "../build/css/",
+      "include": [
+        "../data/global.json",
+        "../data/dark.json"
+      ],
+      "files": [
+        {
+          "destination": "dark.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}
