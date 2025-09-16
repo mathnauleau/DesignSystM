@@ -12,4 +12,8 @@ Otherwise, install Style Dictionary locally for this project first, `cd` into th
 npm init -y && npm install style-dictionary
 ```
 
-and then run the above command.
+To run Style dictionary
+``` bash
+style-dictionary build
+style-dictionary build --verbose
+```
