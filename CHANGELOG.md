@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased] - yyyy-mm-dd
 ### Added
+Icons
 - arrow-left.svg
 - arrow-right.svg
 - book.svg
@@ -24,6 +25,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - language.svg
 - linkedin.svg
 - plus.svg
+
+Fonts
+- Inter
+- Montserrat
+- Product Sans
 
 ## [0.1.0] - 2025-09-01
 ### Added
