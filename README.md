@@ -59,20 +59,20 @@ designsystm/
 
 Right now, **DesignSystM** is a personal side project.  
 That said, I love feedback, inspiration, or fun ideas. If you stumble here, feel free to:
-- Open an issue 💬
-- Suggest a cool experiment 🚀
-- Share your own learnings 🔗
+- Open an issue
+- Suggest a cool experiment
+- Share your own learnings
 
 
 ## 💻 Useful command lines
-To run Style dictionary
+To run [Style dictionary](https://styledictionary.com/getting-started/installation/)
 ``` bash
 style-dictionary build
 style-dictionary build --verbose
 ```
 
 
-## 📌 Note
+## ☝️ Note
 
 This repo is **work in progress**. Expect half-baked ideas, scrappy experiments, and sudden shifts in structure.  
 That’s the point.  
