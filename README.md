@@ -8,7 +8,7 @@ It’s not about being “production-perfect” — it’s about **ideation, ite
 
 
 
-## 🚀 Purpose
+## Purpose
 
 - 📚 **Learning**: deep dive into design systems, tokens, and multi-platform thinking  
 - 🧪 **Experimenting**: trying out different approaches, tools, and structures  
@@ -24,12 +24,12 @@ Here’s the current (and evolving) structure:
 ```bash
 designsystm/
 │
-├── tokens/          # Design tokens (colors, typography, spacing, shadows, etc.)
-│   ├── color.json
-│   ├── typography.json
-│   ├── spacing.json
+├── data/          # Design tokens (colors, typography, spacing, shadows, etc.)
+│   ├── global.json # Includes primitives (core colors, dimensions, textstyles, ...)
+│   ├── light.json
+│   ├── dark.json
+│   ├── highContrast.json
 │   └── …
-│   └── Ideally some codeGen, from JSON to SCSS etc.
 │
 ├── assets/          # Icons, illustrations, logos, and other brand assets
 │   ├── icons/
