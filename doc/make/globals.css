@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Hamburg+Serial:wght@400;700;800&display=swap');
+
+:root {
+--font-size: 16px;
+  
+/* Font weights */
+--font-weight-regular: 400;
+--font-weight-bold: 700;
+--font-weight-xbold: 800;
+--font-weight-medium: 500;
+--font-weight-normal: 400;
+  
+/* Font family */
+--font-family-hamburg: 'Hamburg Serial', sans-serif;
+
+/* Border radius */
+--border-radius-core-s: 4px;
+--border-radius-core-m: 8px;
+--border-radius-core-l: 16px;
+--border-radius-core-xl: 24px;
+--border-radius-core-circle: 8000px;
+
+/* Border width */
+--border-width-core-none: 0px;
+--border-width-core-regular: 1px;
+--border-width-core-thick: 2px;
+--border-width-core-extra-thick: 4px;
+
+/* Elevation */
+--elevation-text-s: '0px 1px 4px 0px rgba(0,0,0,0.25)';
+--elevation-bottom-xs: '0px 1px 4px 0px rgba(38,49,58,0.16)';
+--elevation-bottom-s: '0px 4px 4px 0px rgba(38,49,58,0.04), 0px 8px 16px 0px rgba(38,49,58,0.08)';
+--elevation-bottom-m: '0px 4px 4px 0px rgba(38,49,58,0.04), 0px 16px 32px 0px rgba(38,49,58,0.16)';
+--elevation-bottom-l: '0px 6px 6px 0px rgba(38,49,58,0.06), 0px 24px 48px 0px rgba(38,49,58,0.24)';
+--elevation-top-xs: '0px -1px 4px 0px rgba(38,49,58,0.16)';
+--elevation-top-s: '0px -4px 4px 0px rgba(38,49,58,0.04), 0px -8px 16px 0px rgba(38,49,58,0.08)';
+--elevation-top-m: '0px -4px 4px 0px rgba(38,49,58,0.04), 0px -16px 32px 0px rgba(38,49,58,0.16)';
+--elevation-top-l: '0px -6px 6px 0px rgba(38,49,58,0.06), 0px -24px 48px 0px rgba(38,49,58,0.24)';
+--elevation-left-s: '-4px 0px 4px 0px rgba(38,49,58,0.04), -8px 0px 16px 0px rgba(38,49,58,0.08)';
+--elevation-left-m: '-4px 0px 4px 0px rgba(38,49,58,0.04), -16px 0px 32px 0px rgba(38,49,58,0.16)';
+--elevation-left-l: '-6px 0px 6px 0px rgba(38,49,58,0.06), -24px 0px 48px 0px rgba(38,49,58,0.12)';
+--elevation-right-s: '4px 0px 4px 0px rgba(38,49,58,0.04), 8px 0px 16px 0px rgba(38,49,58,0.08)';
+--elevation-right-m: '4px 0px 4px 0px rgba(38,49,58,0.04), 16px 0px 32px 0px rgba(38,49,58,0.16)';
+--elevation-right-l: '6px 0px 6px 0px rgba(38,49,58,0.06), 24px 0px 48px 0px rgba(38,49,58,0.24)';
+
+/* Spacing scale (8-based, list not generated from Pantry) */
+--spacing-3xs: 2px;
+--spacing-2xs: 4px;
+--spacing-xs: 8px;
+--spacing-sm: 12px;
+--spacing-md: 16px;
+--spacing-lg: 24px;
+--spacing-xl: 32px;
+--spacing-2xl: 48px;
+  
+/* Typography scale */
+--font-size-core-xs: 10px;
+--font-size-core-s: 12px;
+--font-size-core-sm: 14px;
+--font-size-core-m: 16px;
+--font-size-core-l: 18px;
+--font-size-core-xl: 20px;
+--font-size-core-2xl: 24px;
+--font-size-core-3xl: 28px;
+--font-size-core-4xl: 32px;
+--font-size-core-5xl: 40px;
+--font-size-core-6xl: 48px;
+  
+/* The default foreground color used for text, icons (including states). */
+--color-foreground-primary-default: #26313a;
+--color-foreground-primary-disabled: #a7adb4;
+--color-foreground-primary-hover: #404a52;
+--color-foreground-primary-pressed: #404a52;
+
+/* The secondary foreground colors used for texts and subtexts (including states). */
+--color-foreground-secondary-default: #647887;
+--color-foreground-secondary-disabled: #cfd3d8;
+--color-foreground-secondary-hover: #52636f;
+--color-foreground-secondary-pressed: #52636f;
+
+/* The tertiary foreground color used for dividers and borders (including states if the element is interactive). */
+--color-foreground-tertiary-default: #e6e9ed;
+--color-foreground-tertiary-hover: #dadee1;
+--color-foreground-tertiary-pressed: #dadee1;
+--color-foreground-inverted-default: #fff;
+
+/* The default foreground colors used for text or icons on colored background (including states). */
+--color-foreground-inverted-disabled: #f3f6f8;
+--color-foreground-inverted-hover: #f3f6f8;
+--color-foreground-inverted-pressed: #f3f6f8;
+
+/* The popover background color behind any bottom sheet or dialog. */
+--color-background-overlay: #26313a80;
+
+/* The default background color of the App or cards (including states if the element is interactive). */
+--color-background-primary-default: #fff;
+--color-background-primary-disabled: #f3f6f8;
+--color-background-primary-hover: #f3f6f8;
+--color-background-primary-pressed: #f3f6f8;
+
+/* The secondary background color used for some containers and cards (including states). */
+--color-background-secondary-default: #f3f6f8;
+--color-background-secondary-disabled: #f3f6f8;
+--color-background-secondary-hover: #e6e9ed;
+--color-background-secondary-pressed: #dadee1;
+
+/* The tertiary background color used for neutral interactions(including states). */
+--color-background-tertiary-default: #e6e9ed;
+--color-background-tertiary-disabled: #f3f6f8;
+--color-background-tertiary-hover: #dadee1;
+--color-background-tertiary-pressed: #dadee1;
+
+/* The default background color used for decorative containers (including states). */
+--color-background-inverted-default: #26313a;
+--color-background-inverted-disabled: #a7adb4;
+--color-background-inverted-hover: #404a52;
+--color-background-inverted-pressed: #404a52;
+
+/* The static colors. The value doesn't change in dark mode. */
+--color-static-light: #fff;
+--color-static-dark: #26313a;
+
+/* The main action colors, used for interactive elements (Buttons, links, ...). Each color describe a specific state (hover, pressed etc). */
+--color-action-primary-default: #00ade6;
+--color-action-primary-disabled: #b2e6f7;
+--color-action-primary-hover: #3cc0eb;
+--color-action-primary-pressed: #0894c4;
+--color-action-primary-subtle-default: #f2fbfe;
+--color-action-discount-default: #ff7900;
+--color-action-discount-disabled: #ffc999;
+--color-action-discount-hover: #ff9434;
+--color-action-discount-pressed: #e57007;
+--color-action-premium-default: #d89e3c;
+--color-action-premium-disabled: #efd8b1;
+--color-action-premium-hover: #da5;
+--color-action-premium-pressed: #cb8322;
+--color-action-destructive-default: #e00;
+--color-action-destructive-disabled: #ffbcbc;
+--color-action-destructive-hover: #fe1b1b;
+--color-action-destructive-pressed: #cc0001;
+
+/* Feedback colors used to alert or notify a user (toast message, error message etc). */
+--color-feedback-information-default: #26313a;
+--color-feedback-information-subtle: #f3f6f8;
+--color-feedback-success-default: #14d055;
+--color-feedback-success-strong: #1e8542;
+--color-feedback-success-subtle: #e3f9eb;
+--color-feedback-warning-default: #fec817;
+--color-feedback-warning-strong: #cb8322;
+--color-feedback-warning-subtle: #fff3cc;
+--color-feedback-attention-default: #ff7900;
+--color-feedback-attention-strong: #942d07;
+--color-feedback-attention-subtle: #fff1e5;
+--color-feedback-error-default: #e00;
+--color-feedback-error-strong: #a40000;
+--color-feedback-error-subtle: #feebeb;
+
+/* The default colors used for keyboardFocus (first and second layer). */
+--color-feedback-keyboard-focus-primary-border-color: #fff;
+--color-feedback-keyboard-focus-secondary-border-color: #000;
+  
+/* Accent colors used for non-interactive elements (icon, label etc). */
+--color-accent-primary: #00ade6;
+--color-accent-secondary: #00ade6;
+--color-accent-discount: #ff7900;
+--color-accent-premium: #d89e3c;
+--color-accent-new: #f91077;
+--color-accent-highlight: #fec817;
+
+/* Accent gradients used behind product images. */
+--color-accent-taxonomy-fresh-produce: linear-gradient(#e8f6ed,#d1ebda);
+--color-accent-taxonomy-bakery: linear-gradient(#ffedd9,#ffe2c2);
+--color-accent-taxonomy-fresh-chilled: linear-gradient(#e7f6f8,#d9eef1);
+--color-accent-taxonomy-meat: linear-gradient(#ffeeeb,#ffe3df);
+--color-accent-taxonomy-shelf-stable: linear-gradient(#f6f1e9,#f3eadd);
+--color-accent-taxonomy-frozen: linear-gradient(#ebf4fa,#e4f0f8);
+--color-accent-taxonomy-non-food: linear-gradient(#f5f7f9,#eaeff2);
+
+/* Accent colors used for brand collaborations (rarely used). */
+--color-accent-external-albert-heijn: #00ade6;
+--color-accent-external-etos: #eb0248;
+--color-accent-external-gall-gall: #303030;
+--color-accent-external-bol: #3366ca;
+--color-accent-external-air-miles: #007ce1;
+
+/* Theme colors used for decorative visuals. */
+--color-accent-theme-primary-linear: linear-gradient(#3cc0eb,#00ade6);
+--color-accent-theme-primary-radial: radial-gradient(#3cc0eb,#00ade6);
+--color-accent-theme-discount-linear: linear-gradient(#ff9434,#ff7900);
+--color-accent-theme-discount-radial: radial-gradient(#ff9434,#ff7900);
+--color-accent-theme-premium-linear: linear-gradient(#d89e3c,#cb8322);
+--color-accent-theme-premium-radial: radial-gradient(#d89e3c,#cb8322);
+--color-accent-theme-holiday-default: #7f286c;
+--color-accent-theme-holiday-linear: linear-gradient(#7f286c,#5d285f);
+--color-accent-theme-holiday-radial: radial-gradient(#7f286c,#5d285f);
+--color-accent-theme-sustainable-default: #019992;
+--color-accent-theme-sustainable-linear: linear-gradient(#0daea7,#019992);
+--color-accent-theme-sustainable-radial: radial-gradient(#0daea7,#019992);
+--color-accent-theme-lifestyle-default: #dcf2ef;
+--color-accent-theme-lifestyle-linear: linear-gradient(#dcf2ef,#bfe5df);
+--color-accent-theme-lifestyle-radial: radial-gradient(#dcf2ef,#bfe5df);
+--color-accent-theme-black-friday-linear: linear-gradient(#26313a,#000);
+--color-accent-theme-black-friday-radial: radial-gradient(#26313a,#000);
+
+/* Additional action colors, specific to employee tools */
+--color-ex-action-attention-default: #942d07;
+--color-ex-action-attention-hover: #bd5800;
+--color-ex-action-attention-pressed: #5f1c04;
+--color-ex-action-new-default: #f91077;
+--color-ex-action-new-hover: #fb5aa1;
+--color-ex-action-new-pressed: #e40668;
+--color-ex-action-new-disabled: #ffdae7;
+--color-ex-action-error-default: #a40000;
+--color-ex-action-error-hover: #b40a0a;
+--color-ex-action-error-pressed: #700101;
+--color-ex-action-success-default: #1e8542;
+--color-ex-action-success-hover: #16c052;
+--color-ex-action-success-pressed: #065622;
+--color-ex-action-success-disabled: #e3f9eb;
+
+/* Colors for charts and diagrams */
+--color-ex-chart-red-bold: #e00;
+--color-ex-chart-red-subtle: #ffbcbc;
+--color-ex-chart-orange-bold: #ff7900;
+--color-ex-chart-orange-subtle: #ffc999;
+--color-ex-chart-yellow-bold: #fec817;
+--color-ex-chart-yellow-subtle: #fff3cc;
+--color-ex-chart-purple-bold: #864793;
+--color-ex-chart-purple-subtle: #d0bbde;
+--color-ex-chart-indigo-bold: #3366ca;
+--color-ex-chart-indigo-subtle: #d4ecff;
+--color-ex-chart-blue-bold: #00ade6;
+--color-ex-chart-blue-subtle: #b2e6f7;
+--color-ex-chart-green-bold: #16c052;
+--color-ex-chart-green-subtle: #e3f9eb;
+--color-ex-chart-mint-bold: #0daea7;
+--color-ex-chart-mint-subtle: #dcf2ef;
+--color-ex-chart-silver-bold: #404a52;
+--color-ex-chart-silver-subtle: #a7adb4;
+--color-ex-chart-pink-bold: #f91077;
+--color-ex-chart-pink-subtle: #ffdae7;
+
+
+/* Motion duration values */
+--motion-duration-core-x-short: 100ms;
+--motion-duration-core-short: 150ms;
+--motion-duration-core-medium: 200ms;
+--motion-duration-core-long: 300ms;
+--motion-duration-core-x-long: 500ms;
+--motion-duration-hover: 200ms;
+--motion-duration-pressed: 150ms;
+--motion-duration-focus: 150ms;
+--motion-duration-modal-in: 300ms;
+--motion-duration-modal-out: 200ms;
+--motion-duration-slide-in: 300ms;
+--motion-duration-slide-out: 200ms;
+}
+
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"])):not(:has([class^="text-"]))) {
+
+    /* Pantry 'display' textstyle. */
+    h1 {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--font-size-core-5xl);
+      font-weight: var(--font-weight-xbold);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'heading-1' textstyle. */
+    h2 {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-xbold);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'heading-2' textstyle. */
+    h3 {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'heading-3' textstyle. */
+    h4 {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-bold);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'body' textstyle. */
+    p {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-regular);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'subtext' textstyle. Only used on Button components */
+    label {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-xs);
+      font-weight: var(--font-weight-regular);
+      line-height: 1.5;
+    }
+
+    /* Pantry 'button' textstyle. Only used on Button components */
+    button {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1;
+    }
+
+    input {
+      font-family: var(--font-family-hamburg);
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-regular);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-family-hamburg);
+}
