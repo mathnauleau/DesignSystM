@@ -18,40 +18,88 @@ It’s not about being “production-perfect” — it’s about **ideation, ite
 
 ## 📂 Structure (work in progress)
 
-The repo is organized to separate **foundations** (the building blocks) from **components** (the UI pieces).  
+The repo separates **foundations** (the building blocks) from **components** (the UI pieces).  
 Here’s the current (and evolving) structure:
 
 ```bash
 designsystm/
 │
-├── data/          # Design tokens (colors, typography, spacing, shadows, etc.)
-│   ├── global.json # Includes primitives (core colors, dimensions, textstyles, ...)
-│   ├── light.json
-│   ├── dark.json
-│   ├── highContrast.json
-│   └── …
+├── data/                          # Design tokens, source of truth (Tokens Studio format)
+│   ├── global.json                # Primitives (core colors, dimensions, text styles, ...)
+│   ├── light.json                 # Light theme semantic tokens
+│   ├── dark.json                  # Dark theme semantic tokens
+│   ├── themes.json                # Theme definitions (light / dark = global + theme)
+│   ├── $metadata.json             # Token set order
+│   ├── style-dictionary.config.js # Style Dictionary build config
+│   └── dictionary/                # Hand-written foundations CSS
 │
-├── assets/          # Icons, illustrations, logos, and other brand assets
-│   ├── icons/
-│   ├── illustrations/
-│   └── logos/
+├── my-tokens/       # npm package @mathieu.nauleau/tokens (CSS custom properties)
 │
-├── components/      # For now, a list of md files gathering some insights
-│   ├── button/
-│   ├── input/
-│   ├── card/
-│   └── …
+├── components/      # One md file per component spec (start from _template.md)
 │
-├── experiments/     # Wild ideas, prototypes, and “what ifs”
-│   ├── motion-tests/
-│   ├── dark-mode/
-│   └── playground/
+├── resources/       # Brand assets
+│   ├── font/        # Inter, Montserrat, Product Sans
+│   └── icon/        # SVG icons + Figma export presets
 │
-└── docs/            # Documentation, usage guidelines, and examples
-├── foundations.md
-├── components.md
-└── roadmap.md
+├── doc/             # Guides
+│   ├── singleSourceOfTruth.md
+│   ├── storybook.md
+│   └── versioning.md
+│
+├── foundations.md   # Foundations overview
+├── components.md    # Components overview
+├── roadmap.md       # What's next
+└── CHANGELOG.md
 ```
+
+
+
+## 🚀 Getting started
+
+**Prerequisites:** [Node.js](https://nodejs.org/) 22 or later and npm.
+
+Install [Style Dictionary](https://styledictionary.com/getting-started/installation/) (v4+):
+
+```bash
+npm install -g style-dictionary
+```
+
+
+
+## 💻 Useful command lines
+
+Build the tokens with Style Dictionary. The config lives in `data/`, so run it from there:
+
+```bash
+cd data
+style-dictionary build --config style-dictionary.config.js
+style-dictionary build --config style-dictionary.config.js --verbose
+```
+
+This generates one file per theme and platform in `data/build/`:
+
+| Output | Contents |
+| --- | --- |
+| `build/css/light.css` | CSS variables: global + light |
+| `build/css/dark.css` | CSS variables: global + dark |
+| `build/js/light.js` | ES6 exports: global + light |
+| `build/js/dark.js` | ES6 exports: global + dark |
+
+
+
+## 📦 Using the tokens
+
+The tokens are published on npm as [`@mathieu.nauleau/tokens`](https://www.npmjs.com/package/@mathieu.nauleau/tokens):
+
+```bash
+npm install @mathieu.nauleau/tokens
+```
+
+```css
+@import "@mathieu.nauleau/tokens/css";
+```
+
+See [my-tokens/README.md](my-tokens/README.md) for usage, theming, and the token list.
 
 
 
@@ -63,13 +111,9 @@ That said, I love feedback, inspiration, or fun ideas. If you stumble here, feel
 - Suggest a cool experiment
 - Share your own learnings
 
+Pull requests follow the [PR template](.github/PULL_REQUEST_TEMPLATE.md): remember to update the [CHANGELOG](CHANGELOG.md).  
+Versioning follows [Semantic Versioning](https://semver.org/), see [doc/versioning.md](doc/versioning.md).
 
-## 💻 Useful command lines
-To run [Style dictionary](https://styledictionary.com/getting-started/installation/)
-``` bash
-style-dictionary build
-style-dictionary build --verbose
-```
 
 
 ## ☝️ Note
@@ -82,6 +126,7 @@ That’s the point.
 Various inspiring links or repos.
 - https://turborepo.com/docs (Use pseudo-code to describe each component)
 - [fluttericon.com](https://www.fluttericon.com)
+- [Style Dictionary](https://styledictionary.com)
 
 ## 🪄 Figma Plugins
 - [SVG Export](https://www.figma.com/community/plugin/814345141907543603/svg-export)
